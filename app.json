@@ -4,12 +4,18 @@
     "slug": "welcome-expo-l1",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/images/icon.png",
+    "icon": "./assets/images/coffee-icon.png",
     "scheme": "myapp",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "splash": {
+        "image": "./assets/images/splashCoffee.png",
+        "resizeMode": "cover",
+        "backgroundColor": "#ffffff"
+      },
+      "bundleIdentifier": "com.anonymous.welcome-expo-l1"
     },
     "android": {
       "adaptiveIcon": {
@@ -22,20 +28,19 @@
       "output": "static",
       "favicon": "./assets/images/favicon.png"
     },
+    "splash": {
+      "image": "./assets/images/splashCoffee.png",
+      "resizeMode": "cover",
+      "backgroundColor": "#000000"
+    },
     "plugins": [
-      "expo-router",
-      [
-        "expo-splash-screen",
-        {
-          "image": "./assets/images/splash-icon.png",
-          "imageWidth": 200,
-          "resizeMode": "contain",
-          "backgroundColor": "#ffffff"
-        }
-      ]
+      "expo-router"
     ],
     "experiments": {
       "typedRoutes": true
-    }
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ]
   }
 }
